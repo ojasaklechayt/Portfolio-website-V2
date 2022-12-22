@@ -1,9 +1,12 @@
 html{
   scroll-behavior: smooth;
 }
+
 body{
   cursor: none;
-  overflow:visible;  
+  overflow:visible;
+  margin: 0;
+  padding: 0;
 }
 
 body::-webkit-scrollbar{
@@ -53,28 +56,48 @@ footer {
 }
 
 /*Me Page*/
-.myself {
-  display:flex;
-  margin-top: 3%;
-  margin-bottom: 10%;
+.myself{
+  /* background-color: yellowgreen; */
+  margin: 5% 0;
 }
-#dp {
-  margin-left: 30%;
-  width: 35%;
-  height: auto;
-  border-radius: 20%;
-  transition: all 0.3s ease-out;
-  border: solid black 3px;
-  box-shadow: -10px 10px 10px #fc0;
+.myself #me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  margin: 0 5%;
+  gap: 10%;
 }
 
-.text {
-  margin-right: 20%;
-  margin-top: 4%;
-  float: right;
-  font: 23px;
+.myself .image{
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  max-width: 50vh;
+  height: 60vh;
+  /* background-color: #fc0; */
+}
+
+.myself .image img{
+  border-radius: 20%;
+  max-width: 40vh;
+  height: auto;
+  border: 2px solid black;
+  box-shadow: 10px 10px 3px #fc0;
+}
+
+.myself .text{
+  display: flex;
+  text-align: left;
   font-family: "Merriweather", serif;
-  transition: all 0.3s ease-out;
+  /* background-color: pink; */
+}
+
+.myself .text p{
+  /* background-color: red; */
+  height: auto;
+  font-size: 1rem;
+  margin: 0 10%;
 }
 
 #phomtu{
@@ -84,6 +107,26 @@ footer {
 
 #phomtu:hover{
   color: cadetblue;
+}
+
+@media only screen and (max-width: 640px){
+  .myself #me{
+    flex-direction: column;
+  }
+  .myself #me .image{
+    margin: 5% 0;
+  }
+  .myself #me .image img {
+    max-width: 35vh;
+    height: auto;
+  }
+  .myself .text p{
+    margin: 5% 0;
+    font-size: 0.9rem;
+  }
+  .myself .text{
+    text-align: center;
+  }
 }
 
 /*Projects*/
