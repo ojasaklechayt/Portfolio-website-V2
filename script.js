@@ -5,17 +5,17 @@ const thumbnailContainer = document.querySelector(".thumbnails");
 const slideCount = slides.length;
 const slideWidth = 540;
 
--cards.forEach((card) => {
-  card.addEventListener("mouseover", () => {
-    removeActive();
-    card.classList.add("active");
-  });
-});
+cards.forEach((card) =>{
+  card.addEventListener('mouseover', () =>{
+      removeActive()
+      card.classList.add('active')
+  })
+})
 
-function removeActive() {
-  cards.forEach((card) => {
-    card.classList.remove("active");
-  });
+function removeActive () {
+  cards.forEach(card =>{
+      card.classList.remove('active')
+  })
 }
 
 function portfolio() {
@@ -40,87 +40,30 @@ function eventregister() {
   );
 }
 
-new kursor({
-  type: 1
-});
+function cv() {
+  window.open(
+    "https://github.com/ojasaklechayt/Portfolio-Website/blob/24bf536979280e40e9bb4e80907ca82d2a5dc303/Photos%20and%20Documents/Resume-Ojas-Aklecha.pdf"
+  );
+}
 
-const highlightThumbnail = () => {
-  thumbnailContainer
-    .querySelectorAll("div.highlighted")
-    .forEach((el) => el.classList.remove("highlighted"));
-  const index = Math.floor(slideGallery.scrollLeft / slideWidth);
-  thumbnailContainer
-    .querySelector(`div[data-id="${index}"]`)
-    .classList.add("highlighted");
-};
+function twitterhandel() {
+  window.open("https://twitter.com/nammekyahaire");
+}
 
-const scrollToElement = (el) => {
-  const index = parseInt(el.dataset.id, 10);
-  slideGallery.scrollTo(index * slideWidth, 0);
-};
+function linkedin() {
+  window.open("https://www.linkedin.com/in/ojas-aklecha/");
+}
 
-thumbnailContainer.innerHTML += [...slides]
-  .map((slide, i) => `<div data-id="${i}"></div>`)
-  .join("");
+function githubaccount() {
+  window.open("https://github.com/ojasaklechayt");
+}
 
-thumbnailContainer.querySelectorAll("div").forEach((el) => {
-  el.addEventListener("click", () => scrollToElement(el));
-});
+function gmail() {
+  window.open(
+    "https://mail.google.com/mail/u/1/#inbox?compose=CllgCJTMXPVhfTXGZTHxCrHqsGzlMRLTcfhzhxnQXsJsSdhGDGZzfhgQjcRLvMFsFWbldDSvShL"
+  );
+}
 
-slideGallery.addEventListener("scroll", (e) => highlightThumbnail());
-
-highlightThumbnail();
-
-function mereblog() {
-    window.open(
-      "https://ojasaklecha.xyz/"
-    );
-  }
-
-  function twitterthread() {
-    window.open(
-      "https://twitter.com/nammekyahaire/status/1587304940917383169"
-    );
-  }
-
-  function club() {
-    window.open(
-      "https://www.ieeecsvitc.com/"
-    );
-  }
-
-  function cv() {
-    window.open(
-      "https://github.com/ojasaklechayt/Portfolio-Website/blob/24bf536979280e40e9bb4e80907ca82d2a5dc303/Photos%20and%20Documents/Resume-Ojas-Aklecha.pdf"
-    );
-  }
-
-  function twitterhandel() {
-    window.open(
-      "https://twitter.com/nammekyahaire"
-    );
-  }
-
-  function linkedin() {
-    window.open(
-      "https://www.linkedin.com/in/ojas-aklecha/"
-    );
-  }
-
-  function githubaccount() {
-    window.open(
-      "https://github.com/ojasaklechayt"
-    );
-  }
-
-  function gmail() {
-    window.open(
-      "https://mail.google.com/mail/u/1/#inbox?compose=CllgCJTMXPVhfTXGZTHxCrHqsGzlMRLTcfhzhxnQXsJsSdhGDGZzfhgQjcRLvMFsFWbldDSvShL"
-    );
-  }
-
-  function ojuclicks(){
-    window.open("https://www.instagram.com/ojuclicks");
-  }
-
-  
+function ojuclicks() {
+  window.open("https://www.instagram.com/ojuclicks");
+}
