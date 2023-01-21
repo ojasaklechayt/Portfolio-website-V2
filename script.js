@@ -5,18 +5,18 @@ const thumbnailContainer = document.querySelector(".thumbnails");
 const slideCount = slides.length;
 const slideWidth = 540;
 
+function removeActive () {
+  cards.forEach(card =>{
+      card.classList.remove('active')
+  })
+}
+
 cards.forEach((card) =>{
   card.addEventListener('mouseover', () =>{
       removeActive()
       card.classList.add('active')
   })
 })
-
-function removeActive () {
-  cards.forEach(card =>{
-      card.classList.remove('active')
-  })
-}
 
 function portfolio() {
   window.open("https://github.com/ojasaklechayt/Portfolio-Website");
@@ -66,4 +66,12 @@ function gmail() {
 
 function ojuclicks() {
   window.open("https://www.instagram.com/ojuclicks");
+}
+
+function blog(){
+  window.open("https://ojasaklecha.xyz/building-a-beautiful-responsive-members-page-with-flex-cards");
+}
+
+function twitterthread(){
+  window.open("https://twitter.com/nammekyahaire/status/1615398175409582080")
 }

@@ -31,7 +31,6 @@ nav {
 }
 .container ul li a:hover {
   color: #fc0;
-  cursor: none;
   transition: all 0.3s ease-out;
 }
 
@@ -106,6 +105,7 @@ footer {
 
 #phomtu:hover{
   color: cadetblue;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 640px){
@@ -197,6 +197,7 @@ footer {
 
 .column1 img:hover,.column2 img:hover{
   box-shadow: 10px -5px 5px #fc0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
