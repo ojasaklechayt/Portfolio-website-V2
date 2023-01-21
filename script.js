@@ -1,22 +1,8 @@
-const cards = document.querySelectorAll(".card");
 const slideGallery = document.querySelector(".slides");
 const slides = slideGallery.querySelectorAll("div");
 const thumbnailContainer = document.querySelector(".thumbnails");
 const slideCount = slides.length;
 const slideWidth = 540;
-
-function removeActive () {
-  cards.forEach(card =>{
-      card.classList.remove('active')
-  })
-}
-
-cards.forEach((card) =>{
-  card.addEventListener('mouseover', () =>{
-      removeActive()
-      card.classList.add('active')
-  })
-})
 
 function portfolio() {
   window.open("https://github.com/ojasaklechayt/Portfolio-Website");

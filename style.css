@@ -130,36 +130,9 @@ footer {
 
 /*Projects*/
 .projects{
-  background-color: rgb(105, 104, 101);
+  background-color: rgb(194, 180, 139);
   padding-top: 3%;
   padding-bottom: 7%;
-}
-.wrapper{
-  height: 50vh;
-  display: flex;
-  gap: 1rem;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.card{
-  width: 5rem;
-  border-radius: 4rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.card.active{
-  width: 80rem;
-  cursor: pointer;
-}
-
-.card.active:hover{
-  width: 120rem;
 }
 
 .writtings{
@@ -169,6 +142,41 @@ footer {
   font-size:x-large;
 }
 
+.writtings p{
+  color: white;
+  margin-top: -2%;
+  font-weight: 200;
+}
+
+.writtings img{
+  width: 70%;
+  height: auto;
+  border-radius: 120px 20px 120px 20px;
+  transition: all 0.5s ease;
+  box-shadow: 5px 5px 5px rgb(79, 255, 3);
+}
+
+.writtings img:hover{
+  border-radius: 20px 120px 20px 120px;
+  cursor: pointer;
+  box-shadow: -5px -5px 5px rgb(72, 7, 158);
+}
+
+@media screen and (max-width: 800px){
+  .writtings img{
+    width: 70%;
+    height: auto;
+    border-radius: 80px 20px 80px 20px;
+    transition: all 0.5s ease;
+    box-shadow: 5px 5px 5px rgb(79, 255, 3);
+  }
+
+  .writtings img:hover{
+    border-radius: 20px 80px 20px 80px;
+    cursor: pointer;
+    box-shadow: -5px -5px 5px rgb(72, 7, 158);
+  }
+}
 /*Events*/
 .row{
   font-family: 'Playfair Display', serif;
