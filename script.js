@@ -55,9 +55,17 @@ function ojuclicks() {
 }
 
 function blog(){
-  window.open("https://ojasaklecha.xyz/building-a-beautiful-responsive-members-page-with-flex-cards");
+  window.open("https://ojasaklecha.xyz/");
 }
 
-function twitterthread(){
-  window.open("https://twitter.com/nammekyahaire/status/1615398175409582080")
+function twitter(){
+  window.open("https://twitter.com/ojasaklecha")
+}
+
+function screen1(){
+  window.open("https://de-school-mate-tau.vercel.app/")
+}
+
+function screen2(){
+  window.open("https://opensea.io/assets/matic/0x0dd278902ec4c6245cc60b844fcc0cc88b48623f/48")
 }
